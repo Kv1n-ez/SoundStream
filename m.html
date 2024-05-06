@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/m.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menuToggle"></div>
+    <div class="bara_lateral">
+        <ul>
+            <li class="logo" style="--bg:#33ff00;">
+                <a href="#">
+                <div class="icono"><ion-icon name="radio-outline"></ion-icon></div>
+                <div class="texto">MusicApp</div>
+            </a>
+                </li>
+                    <div class="Listamenu">
+                <li style="--bg: #ffd900;" class="active">
+                    <a href="#">
+                        <div class="icono"><ion-icon name="home-outline"></ion-icon></div>
+                        <div class="texto">Inicio</div>
+                    </a>
+                </li>
+                <li style="--bg: #51ff00;">
+                    <a href="#">
+                        <div class="icono"><ion-icon name="musical-notes-outline"></ion-icon></div>
+                        <div class="texto">Playlist</div>
+                    </a>
+                </li>
+                <li style="--bg: #00e1ff;">
+                    <a href="#">
+                        <div class="icono"><ion-icon name="albums-outline"></ion-icon></div>
+                        <div class="texto">Álbumes</div>
+                    </a>
+                </li>
+                <li style="--bg: #ff0000;">
+                    <a href="#">
+                        <div class="icono"><ion-icon name="flame-outline"></ion-icon></div>
+                        <div class="texto">Tendencias</div>
+                    </a>
+                </li>
+                <li style="--bg: #a5fd00;">
+                    <a href="#">
+                        <div class="icono"><ion-icon name="help-outline"></ion-icon></div>
+                        <div class="texto">Ayuda</div>
+                    </a>
+                </li>
+                <li style="--bg: #00b982;">
+                    <a href="#">
+                        <div class="icono"><ion-icon name="settings-outline"></ion-icon></div>
+                        <div class="texto">Ajustes</div>
+                    </a>
+                </li>                        
+            </div>
+            <div class="perfil"></div>
+            <li style="--bg: #272727;">
+                <a href="#">
+                    <div class="icono">
+                        <div class="imgp">
+                            <img src="imagenes/ftperfil.jpg">
+                        </div>
+                    </div>
+                    <div class="texto">Reginaldo Cucul</div>
+                </a>
+            </li>
+            <li style="--bg: #000000;">
+                <a href="#">
+                    <div class="icono"><ion-icon name="exit-outline"></ion-icon></div>
+                    <div class="texto">Cerrar Sesion</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <center>
+        <div>
+            <input type="text"placeholder="Buscar...">
+            <button><ion-icon name="search-outline"></ion-icon></button>
+        </div>   
+    </center>
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
+
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let bara_lateral = document.querySelector('.bara_lateral');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            bara_lateral.classList.toggle('active');
+        }
+        let Listamenu = document.querySelectorAll('.Listamenu li');
+        function activeLink(){
+            Listamenu.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        Listamenu.forEach((item)=>
+        item.addEventListener('click', activeLink));
+    </script>
+    <script src="js/m.js"></script>
+</body>
+</html>
