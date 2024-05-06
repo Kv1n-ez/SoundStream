@@ -69,7 +69,6 @@ body
     box-shadow: 5px -5px 0 3px var(--clr);
     background: transparent;
 }
-
 .bara_lateral ul li.logo
 {
     margin-bottom: 60px;
@@ -81,9 +80,16 @@ body
 }
 .bara_lateral ul li.logo .texto
 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 500;
     color: var(--clr);
+}
+.logo .image img
+{
+    width: 60px;
+    height: auto;
+    padding-left: 9px;
+    margin-top: 15px;
 }
 .bara_lateral ul li a
 {
@@ -101,7 +107,7 @@ body
     min-width: 60px;
     padding-left: 10px;
     height: 70px;
-    font-size: 1.Sem;
+    font-size: 1.5em;
     color: #333;
     transition: 0.5s ease;
 }
