@@ -150,23 +150,22 @@ body {
 .bara_lateral ul li:hover.active a .icono::before {
     background: #fff;
 }
-
-.perfil {
-    position: relative;
+.perfil
+{
+    position: absolute;
     bottom: 0;
-    height: 250px;
     width: 100%;
 }
-
-.imgp {
+.imgp
+{
     position: relative;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     overflow: hidden;
 }
-
-.imgp img {
+.imgp img
+{
     position: absolute;
     top: 0;
     left: 0;
@@ -174,7 +173,6 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
 .menuToggle {
     position: absolute;
     top: 20px;
@@ -237,8 +235,6 @@ button {
     border-radius: 50px;
     cursor: pointer;
 }
-
-/* Estilos responsivos */
 @media screen and (max-width: 768px) {
     .bara_lateral {
         width: 100%;
