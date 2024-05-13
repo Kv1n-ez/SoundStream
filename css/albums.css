@@ -1,20 +1,21 @@
-* {
+*
+{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-:root {
-    --clr: #14161e;
+:root
+{
+    --clr: #14161e
 }
-
-body {
+body
+{
     min-height: 100vh;
     background: var(--clr);
 }
-
-.bara_lateral {
+.bara_lateral
+{
     position: absolute;
     width: 80px;
     height: 100%;
@@ -24,28 +25,28 @@ body {
     padding-bottom: 50%;
     overflow: hidden;
 }
-
-.bara_lateral.active {
+.bara_lateral.active
+{
     width: 300px;
 }
-
-.bara_lateral ul {
+.bara_lateral ul
+{
     position: relative;
     height: 100vh;
 }
-
-.bara_lateral ul li {
+.bara_lateral ul li
+{
     position: relative;
     list-style: none;
 }
-
-.bara_lateral ul li.active {
+.bara_lateral ul li.active
+{
     background: var(--clr);
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 }
-
-.bara_lateral ul li.active::before {
+.bara_lateral ul li.active::before
+{
     content: '';
     position: absolute;
     top: -20px;
@@ -56,8 +57,8 @@ body {
     box-shadow: 5px 5px 0 5px var(--clr);
     background: transparent;
 }
-
-.bara_lateral ul li.active::after {
+.bara_lateral ul li.active::after
+{
     content: '';
     position: absolute;
     bottom: -20px;
@@ -68,37 +69,37 @@ body {
     box-shadow: 5px -5px 0 3px var(--clr);
     background: transparent;
 }
-
-.bara_lateral ul li.logo {
+.bara_lateral ul li.logo
+{
     margin-bottom: 60px;
 }
-
-.bara_lateral ul li.logo .icono {
+.bara_lateral ul li.logo .icono
+{
     font-size: 2em;
     color: var(--clr);
 }
-
-.bara_lateral ul li.logo .texto {
+.bara_lateral ul li.logo .texto
+{
     font-size: 1.3em;
     font-weight: 500;
     color: var(--clr);
 }
-
-.logo .image img {
+.logo .image img
+{
     width: 60px;
     height: auto;
     padding-left: 9px;
     margin-top: 15px;
 }
-
-.bara_lateral ul li a {
+.bara_lateral ul li a
+{
     position: relative;
     display: flex;
     white-space: nowrap;
     text-decoration: none;
 }
-
-.bara_lateral ul li a .icono {
+.bara_lateral ul li a .icono
+{
     position: relative;
     display: flex;
     justify-content: center;
@@ -110,8 +111,8 @@ body {
     color: #333;
     transition: 0.5s ease;
 }
-
-.bara_lateral ul li a .texto {
+.bara_lateral ul li a .texto
+{
     position: relative;
     height: 70px;
     display: flex;
@@ -123,21 +124,21 @@ body {
     letter-spacing: 0.05em;
     transition: 0.5s ease;
 }
-
-.bara_lateral ul li.active a .icono {
+.bara_lateral ul li.active a .icono
+{
     color: #ffff;
 }
-
-.bara_lateral ul li.active a .texto {
+.bara_lateral ul li.active a .texto
+{
     color: var(--bg);
 }
-
 .bara_lateral ul li:hover a .icono,
-.bara_lateral ul li:hover a .texto {
+.bara_lateral ul li:hover a .texto
+{
     color: var(--bg);
 }
-
-.bara_lateral ul li.active a .icono::before {
+.bara_lateral ul li.active a .icono::before
+{
     content: '';
     position: absolute;
     inset: 5px;
@@ -145,28 +146,29 @@ body {
     background: var(--bg);
     border-radius: 50%;
     transition: 0.5s;
-}
 
-.bara_lateral ul li:hover.active a .icono::before {
+}
+.bara_lateral ul li:hover.active a .icono::before
+{
     background: #fff;
 }
-
-.perfil {
+.perfil
+{
     position: relative;
     bottom: 0;
     height: 250px;
     width: 100%;
 }
-
-.imgp {
+.imgp
+{
     position: relative;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     overflow: hidden;
 }
-
-.imgp img {
+.imgp img
+{
     position: absolute;
     top: 0;
     left: 0;
@@ -174,8 +176,8 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
-.menuToggle {
+.menuToggle
+{
     position: absolute;
     top: 20px;
     right: 20px;
@@ -188,8 +190,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-.menuToggle::before {
+.menuToggle::before
+{
     content: '';
     position: absolute;
     width: 30px;
@@ -199,8 +201,8 @@ body {
     transition: 0.5s;
     box-shadow: 0 9px 0 #fff;
 }
-
-.menuToggle::after {
+.menuToggle::after
+{
     content: '';
     position: absolute;
     width: 30px;
@@ -209,17 +211,17 @@ body {
     transform: translateY(9px);
     transition: 0.5s;
 }
-
-.menuToggle.active::before {
+.menuToggle.active::before
+{
     transform: translateY(0px) rotate(45deg);
     box-shadow: 0 0 0 #fff;
 }
-
-.menuToggle.active::after {
+.menuToggle.active::after
+{
     transform: translateY(0px) rotate(-45deg);
 }
-
-input {
+input
+{
     margin-top: 20px;
     width: 600px;
     padding: 10px;
@@ -228,8 +230,8 @@ input {
     font-size: 14px;
     margin-right: 3px;
 }
-
-button {
+button
+{
     padding: 13px 13px;
     background-color: #000000;
     color: rgb(255, 255, 255);
@@ -238,17 +240,44 @@ button {
     cursor: pointer;
 }
 
-/* Estilos responsivos */
-@media screen and (max-width: 768px) {
-    .bara_lateral {
-        width: 100%;
-        padding: 0;
-    }
-    .menuToggle {
-        top: 10px;
-        right: 10px;
-    }
-    input {
-        width: 80%;
-    }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuir el espacio entre las columnas */
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px); /* Ancho para tres álbumes por columna */
+    margin: 10px 0; /* Espacio entre las filas */
+    border: none; /* Quitamos el borde */
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card img {
+    width: 70%; /* Ajustamos el ancho al 100% para que todas las imágenes tengan el mismo tamaño */
+    height: 70%; /* Mantenemos la proporción de la imagen */
+    overflow: hidden;/* Ajustamos la imagen para que cubra el contenedor */
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 300px;
+    height: 100%;
+    background-color: #f4f4f4;
+    transition: right 0.5s ease; /* Transición para el desplazamiento lateral */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el ratón sobre la carta */
+    transition: transform 0.5s ease; /* Transición suave */
+}
+
+.sidebar.open {
+    right: 0; /* Muestra la barra lateral cuando tiene la clase 'open' */
 }

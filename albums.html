@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/m.css">
+    <link rel="stylesheet" href="css/albums.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,29 +12,29 @@
         <ul>
             <li class="logo" style="--bg:#000000;">
                 <a href="#">
-                    <div class="image"><img src="imagenes/Logo.png" alt=""></div>
-                    <div class="texto">SoundStream</div>
-                </a>
-            </li>
-            <div class="Listamenu">
-                <li style="--bg: #ffd900;" class="active">
-                    <a href="#">
+                <div class="image"><img src="imagenes/Logo.png" alt=""></ion-icon></div>
+                <div class="texto">SoundStream</div>
+            </a>
+                </li>
+                    <div class="Listamenu">
+                <li style="--bg: #ffd900;">
+                    <a href="m.html">
                         <div class="icono"><ion-icon name="home-outline"></ion-icon></div>
                         <div class="texto">Inicio</div>
                     </a>
                 </li>
-                <section><li style="--bg: #51ff00;">
+                <li style="--bg: #51ff00;">
                     <a href="#">
                         <div class="icono"><ion-icon name="musical-notes-outline"></ion-icon></div>
                         <div class="texto">Playlist</div>
                     </a>
-                </li></section>
-                <section><li style="--bg: #00e1ff;">
-                    <a href="albums.html">
+                </li>
+                <li style="--bg: #00e1ff;" class="active">
+                    <a href="#">
                         <div class="icono"><ion-icon name="albums-outline"></ion-icon></div>
                         <div class="texto">Álbumes</div>
                     </a>
-                </li></section>
+                </li>
                 <li style="--bg: #ff0000;">
                     <a href="#">
                         <div class="icono"><ion-icon name="flame-outline"></ion-icon></div>
@@ -75,12 +75,36 @@
     </div>
     <center>
         <div>
-            <input type="text" placeholder="Buscar...">
+            <input type="text"placeholder="Buscar...">
             <button><ion-icon name="search-outline"></ion-icon></button>
         </div>   
     </center>
-    <script  type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script  nomodule  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div class="container">
+        <div class="card" onclick="showSidebar(1)">
+          <img src="" alt="Portada Álbum 1">
+          <h3>Reginaldo Cucul</h3>
+        </div>
+        <div class="card" onclick="showSidebar(2)">
+          <img src="" alt="Portada Álbum 2">
+          <h3>Farruko Pop</h3>
+        </div>
+        <div class="card" onclick="showSidebar(3)">
+          <img src="" alt="Portada Álbum 3">
+          <h3>Rancherito Calibre 58</h3>
+        </div>
+      </div>
+      
+      <div id="sidebar" class="sidebar">
+        <img id="sidebarCover" src="" alt="Portada Álbum">
+        <h3 id="sidebarTitle">Nombre Álbum</h3>
+        <ul id="sidebarSongs">
+          <!-- Aquí se mostrarán las canciones -->
+        </ul>
+        <button onclick="hideSidebar()">Cerrar</button>
+      </div>
+   
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
 
     <script>
         let menuToggle = document.querySelector('.menuToggle');
@@ -98,6 +122,6 @@
         Listamenu.forEach((item)=>
         item.addEventListener('click', activeLink));
     </script>
-    <script src="js/m.js"></script>
+    <script src="js/albums.js"></script>
 </body>
 </html>
