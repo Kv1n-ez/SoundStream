@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const progressContainer = document.querySelector(".progress_container");
     const progress = document.getElementById("progress");
 
-    const songs = ["Joji - Die For You", "The Weeknd - Save Your Tears"];
+    const songs = ["Joji - Die For You", "The Weeknd - Save Your Tears", "Rauw Alejandro - El Efecto Remix"];
     let audioIndex = 0;
 
     loadAudio(songs[audioIndex]);
