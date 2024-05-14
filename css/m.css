@@ -234,7 +234,7 @@ button {
     border-radius: 50px;
     cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
     .bara_lateral {
         width: 100%;
         padding: 0;
