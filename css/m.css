@@ -21,7 +21,6 @@ body {
     background: #000000;
     transition: 0.5s;
     padding-left: 10px;
-    padding-bottom: 50%;
     overflow: hidden;
 }
 
@@ -244,6 +243,9 @@ button {
         top: 10px;
         right: 10px;
     }
+    .container {
+        padding: 5px;
+      }
     input {
         width: 80%;
     }
@@ -300,12 +302,6 @@ button {
   
   .container .buttons button i {
     font-size: 20px;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .container {
-      padding: 5px;
-    }
   }
 #songImage {
     width: 60px; 
